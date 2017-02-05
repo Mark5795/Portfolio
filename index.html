@@ -50,7 +50,26 @@
 		<section id="contact">
 			<h1>contact</h1>
 			<section id="contactformulier">
-				
+				<form action="mailto:markkea95@gmail.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">
+					<form class="contactvelden">
+						<input type="text" name="voorletters" placeholder="Voorletters" required>
+					</form>
+					<form class="contactformulier">
+						<input type="text" name="achternaam" placeholder="Achternaam" required>
+					</form>
+					<form class="contactformulier">
+						<input type="email" name="email" placeholder="Email" required>
+					</form>
+					<form class="contactformulier">
+						<input type="text" name="onderwerp" placeholder="Onderwerp" required>
+					</form>
+					<form class="contactformulier">
+						<textarea name="message" rows="10" cols="30" placeholder="Typ hier uw bericht"></textarea>
+					</form>
+					<form class="contactformulier">
+						<input type="button" name="btn" class="btn-style" value="Versturen" onclick="return confirm('Bericht verzonden!')">
+					</form>
+				</form>
 			</section>
 		</section>
 
