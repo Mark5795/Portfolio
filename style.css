@@ -102,14 +102,43 @@ h1
 	height: 100%;
 	width: 50%;
 	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;	
+	margin-right: auto;	
 }
 input
 {
+	height: 30px;
 	width:100%;
 	color: #ffffff;
 	background-color: #00BFFF;
+	margin-top: 1%;
+}
+textarea
+{
+	background-color: #00BFFF;
+	height: 120px;
+	width:100%;
+	margin-top: 1%;
+}
+#submit
+{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
+::-webkit-input-placeholder {
+    color:#ffffff;
+}
+
+::-moz-placeholder {
+    color:#ffffff;
+}
+
+::-ms-placeholder {
+    color:#ffffff;
+}
+
+::placeholder {
+    color:#ffffff;
 }
 
 /* paginafooter */
