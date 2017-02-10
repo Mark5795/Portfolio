@@ -168,12 +168,12 @@ textarea
 }
 
 /*/ --- SCROLL-TOP --- /*/
-#scrollTop{
+/*#scrollTop{
 	position:fixed;
 	bottom:-60px;
 	right:20px;
 	z-index:10000;
-}
+}*/
 #scrollTop img{
 	cursor: pointer;
 	width:50px;
