@@ -7,10 +7,11 @@
 		<meta name="description" content="Porfolio website Mark Kea">
 		<meta name="keywords" content="Porfolio, Mark, Kea,">
 
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css">
 
 		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="scrollTo.min.js"></script>
 	</head>
 
 	<body>
@@ -21,10 +22,10 @@
 		</header>
 
 		<section id="about">
-			<h1>about</h1>
+			<h1>About</h1>
 			<section id="aboutsection">
 				<article id="wiebenik">
-					<h2>wie ben ik</h2>
+					<h2>Wie ben ik</h2>
 					<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo 
 						ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
 						parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, 
@@ -35,7 +36,13 @@
 							Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
 				</article>
 				<aside>
-					<h2>skills</h2>
+					<h2>Skills</h2>
+					<p>HTML & CSS</p>
+					<p>Javascript</p>
+					<p>Bootstrap</p>
+					<p>WordPress</p>
+					<p>Photoshop</p>
+					<p></p>
 				</aside>
 			</section>
 		</section>
@@ -52,19 +59,19 @@
 			<section id="contactformulier">
 				<form action="mailto:markkea95@gmail.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">
 					<form class="contactvelden">
-						<input type="text" name="voorletters" placeholder="Voorletters" required>
+						<input type="text" name="voorletters" placeholder=" Voorletters" required>
 					</form>
-					<form class="contactformulier">
-						<input type="text" name="achternaam" placeholder="Achternaam" required>
+					<form class="contactvelden">
+						<input type="text" name="achternaam" placeholder=" Achternaam" required>
 					</form>
-					<form class="contactformulier">
-						<input type="email" name="email" placeholder="Email" required>
+					<form class="contactvelden">
+						<input type="email" name="email" placeholder=" Email" required>
 					</form>
-					<form class="contactformulier">
-						<input type="text" name="onderwerp" placeholder="Onderwerp" required>
+					<form class="contactvelden">
+						<input type="text" name="onderwerp" placeholder=" Onderwerp" required>
 					</form>
-					<form class="contactformulier">
-						<textarea name="message" rows="10" cols="30" placeholder="Typ hier uw bericht"></textarea>
+					<form class="contactvelden">
+						<textarea name="message" rows="10" cols="30" placeholder=" Typ hier uw bericht"></textarea>
 					</form>
 					<form id="submit">
 						<input type="button" name="btn" class="btn-style" value="Versturen" onclick="return confirm('Bericht verzonden!')">
@@ -74,8 +81,9 @@
 		</section>
 
 		<footer id="paginafooter">
+			<p id="scrollTop"> Scroll top</p>
 			<p>Copyright &copy; 2017 Mark Kea</p>
-			<p>markkea95@gmail.com</p>
+			<p id="emailfooter">markkea95@gmail.com</p>
 		</footer>		
 		
 	</body>
