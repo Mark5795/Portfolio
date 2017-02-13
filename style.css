@@ -19,13 +19,59 @@ h1
 	font-weight: normal;
 	color: #000000;
 }
+h2{
+	font-size: 30px;
+	font-weight: normal;
+}
+p
+{
+	margin-top: 1%;
+	font-size: 20px;
+}
+/* navbar */
+#wrap {
+   margin: 10px auto;        
+   background: #FFFFFF;
+   padding: 10px;
+   width: 700px;
+}
+#navheader {
+   background-color: #FFFFFF;
+   color: #FFFFFF;
+}
+#navWrap {
+   height: 30px;
+}
+#nav {
+   padding: 5px;
+   background: #FFFFFF;    
+}
+#nav ul {
+   margin: 0;
+   padding: 0;    
+}
+#nav li {
+   float: left;
+   padding: 3px 8px;
+   background-color: #FFFFFF;
+   margin: 0 10px 0 0;
+   color: #27AAE2;
+   list-style-type: none;
+}
+#nav li a {
+   color: #27AAE2;  
+   text-decoration: none;    
+}
+#nav li a:hover {
+   text-decoration: underline;   
+}
 
 /* header */
 #paginaheader
 {
 	background-color: #27AAE2;
 	margin-top: 20px;
-	height: 600px;
+	height: auto;
 	width: 100%;
 }
 #naam
@@ -56,27 +102,32 @@ h1
 /* about */
 #about
 {
-	border-style: solid;
 	min-height: 469px;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 2%;
+	padding-bottom: 5%;
 	max-width: 100%;
-	overflow: initial;
 }
 #aboutsection
 {
 	height: 100%;
-	width: 60%;
+	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;	
 }
 #wiebenik
 {
-	height: 40%;
-	width: 60%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 	margin-bottom: 4%;
-	float: left;
+}
+#skills
+{
+	height: auto;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;	
 }
 
 /* experience */
@@ -87,8 +138,6 @@ h1
 	max-width: 100%;
 	overflow: initial;
 	background:#EAEAEA;
-	margin-top: 5%;
-	margin-bottom: 5%;
 }
 #workinprogress
 {
@@ -96,18 +145,23 @@ h1
     margin-left: auto;
     margin-right: auto;
  	height: auto; 
- 	max-width: 40%
+ 	max-width: 40%;
+	padding-top: 2%;
+	padding-bottom: 5%;
 }
 #experiencesection
 {
 	height: 100%;
-	width: 60%;
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 5%;	
-	margin-bottom: 5%;
+	padding-top: 2%;
 }
-
+#experiencetitel
+{
+	margin-left: auto;
+	margin-right: auto;	
+}
 /* contact */
 #contact
 {
@@ -115,8 +169,8 @@ h1
 	min-height: 469px;
 	max-width: 100%;
 	overflow: initial;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 2%;
+	padding-bottom: 5%;
 }
 #contactformulier
 {
@@ -175,30 +229,20 @@ textarea
 {
 	height: 100%;
 	width: 100%;
-	padding:70px 0;
+	padding-top: 2%;
+	padding-bottom: 2%;
 	background:#EAEAEA;
 	text-align: center;
+}
+#arrow
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	height: auto;
+	width: auto;
 }
 #emailfooter
 {
 	margin: 1%;
-}
-
-/*/ --- SCROLL-TOP --- /*/
-/*#scrollTop{
-	position:fixed;
-	bottom:-60px;
-	right:20px;
-	z-index:10000;
-}*/
-#scrollTop img{
-	cursor: pointer;
-	width:50px;
-	height:50px;
-}
-@media screen and (max-width: 770px) {
-    #scrollTop {
-        display: none !important;
-		visibility:hidden !important;
-    }	
 }
