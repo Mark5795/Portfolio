@@ -12,7 +12,8 @@
 
 		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 		<script type="text/javascript" src="javascript/script.js"></script>		
-		<script type="text/javascript" src="javascript/smoothscroll.js"></script>		
+		<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+		<script type="text/javascript" src="javascript/app.js"></script>		
 	</head>
 
 	<body>
@@ -80,25 +81,32 @@
 		<section id="contact">
 			<h1>Contact</h1>
 			<section id="contactformulier">
-				<form action="mailto:markkea95@gmail.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">
+				<section id="form-messages"></section>
+					<form id="ajax-contact" method="post" action="mailer.php">
 					<form class="contactvelden">
-						<input type="text" name="voorletters" placeholder=" Voorletters" required>
+						<input type="text" name="voornaam" placeholder=" Voornaam" required>
 					</form>
+
 					<form class="contactvelden">
 						<input type="text" name="achternaam" placeholder=" Achternaam" required>
 					</form>
+
 					<form class="contactvelden">
 						<input type="email" name="email" placeholder=" Email" required>
 					</form>
+
 					<form class="contactvelden">
 						<input type="text" name="onderwerp" placeholder=" Onderwerp" required>
 					</form>
+
 					<form class="contactvelden">
-						<textarea name="message" rows="10" cols="30" placeholder=" Typ hier uw bericht"></textarea>
+						<textarea name="message" rows="10" cols="30" placeholder=" Typ hier uw bericht" required></textarea>
 					</form>
+
 					<form id="submit">
-						<input type="button" name="btn" class="btn-style" value="Versturen" onclick="return confirm('Bericht verzonden!')">
+						<input type="button" name="btn" class="btn-style" value="Versturen">
 					</form>
+					
 				</form>
 			</section>
 		</section>
