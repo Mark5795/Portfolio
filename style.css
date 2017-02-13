@@ -47,8 +47,8 @@ h1
 #headerpicture
 {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 33%;
+    margin-right: 100%;
  	height: auto; 
  	max-width: 40%
 }
@@ -88,6 +88,23 @@ h1
 	overflow: initial;
 	background:#EAEAEA;
 	margin-top: 5%;
+	margin-bottom: 5%;
+}
+#workinprogress
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	height: auto; 
+ 	max-width: 40%
+}
+#experiencesection
+{
+	height: 100%;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;	
 	margin-bottom: 5%;
 }
 
