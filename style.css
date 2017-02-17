@@ -40,27 +40,28 @@ p
    color: #FFFFFF;
 }
 #navWrap {
-   height: 30px;
+   height: 20px;
 }
 #nav {
    padding: 5px;
-   background: #FFFFFF;    
+   background: #FFFFFF;  
+   min-height:30px;  
 }
 #nav ul {
    margin: 0;
    padding: 0;    
 }
 #nav li {
-   float: left;
+   margin-left: auto;
+   margin-right: auto;
    padding: 3px 8px;
    background-color: #FFFFFF;
    margin: 0 10px 0 0;
-   color: #27AAE2;
    list-style-type: none;
 }
 #nav li a {
    color: #27AAE2;  
-   text-decoration: none;    
+   text-decoration: none;
 }
 #nav li a:hover {
    text-decoration: underline;   
@@ -201,11 +202,10 @@ textarea
 	border-top: 4px solid #1885b4; 
 }
 #submit
-{
-	width: 25%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 2%;
+{	
+	position: absolute;
+	width: 10%;
+	margin-left: 20%;
 }
 ::-webkit-input-placeholder {
     color:#ffffff;

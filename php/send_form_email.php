@@ -1,38 +1,26 @@
 <?php
  
 if(isset($_POST['email'])) {
- 
-     
- 
-    // EDIT THE 2 LINES BELOW AS REQUIRED
- 
+
     $email_to = "markkea95@gmail.com";
  
-    $email_subject = "Your email subject line";
- 
-     
- 
+    $email_subject = "Bericht van markkea.nl"; 
      
  
     function died($error) {
  
-        // your error code can go here
+        echo "Er zijn errors opgetreden";
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
- 
-        echo "These errors appear below.<br /><br />";
+        echo "Deze errors komen hieronder.<br /><br />";
  
         echo $error."<br /><br />";
  
-        echo "Please go back and fix these errors.<br /><br />";
+        echo "Gaat u terug en los de errors op<br /><br />";
  
         die();
  
     }
  
-     
- 
-    // validation expected data exists
  
     if(!isset($_POST['voornaam']) ||
  
@@ -44,21 +32,21 @@ if(isset($_POST['email'])) {
  
         !isset($_POST['bericht'])) {
  
-        died('We are sorry, but there appears to be a problem with the form you submitted.');       
+        died('Er is een probleem opgetreden.');       
  
     }
  
      
  
-    $first_name = $_POST['voornaam']; // required
+    $voornaam = $_POST['voornaam']; // required
  
-    $last_name = $_POST['achternaam']; // required
+    $achternaam = $_POST['achternaam']; // required
  
     $email_from = $_POST['email']; // required
  
-    $telephone = $_POST['onderwerp']; // not required
+    $onderwerp = $_POST['onderwerp']; // not required
  
-    $comments = $_POST['bericht']; // required
+    $bericht = $_POST['bericht']; // required
  
      
  
@@ -68,7 +56,7 @@ if(isset($_POST['email'])) {
  
   if(!preg_match($email_exp,$email_from)) {
  
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'De ingevoerde email geeft een foutmelding.<br />';
  
   }
  
@@ -76,19 +64,19 @@ if(isset($_POST['email'])) {
  
   if(!preg_match($string_exp,$voornaam)) {
  
-    $error_message .= 'The First Name you entered does not appear to be valid.<br />';
+    $error_message .= 'De ingevoerde voornaam geeft een foutmelding.<br />';
  
   }
  
   if(!preg_match($string_exp,$achternaam)) {
  
-    $error_message .= 'The Last Name you entered does not appear to be valid.<br />';
+    $error_message .= 'De ingevoerde achternaam geeft een foutmelding.<br />';
  
   }
  
   if(strlen($bericht) < 2) {
  
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'Het bericht geeft een foutmelding.<br />';
  
   }
  
@@ -98,7 +86,7 @@ if(isset($_POST['email'])) {
  
   }
  
-    $email_message = "Form details below.\n\n";
+    $email_message = "Het bericht hieronder.\n\n";
  
      
  
@@ -112,21 +100,17 @@ if(isset($_POST['email'])) {
  
      
  
-    $email_message .= "First Name: ".clean_string($voornaam)."\n";
+    $email_message .= "Voornaam: ".clean_string($voornaam)."\n";
  
-    $email_message .= "Last Name: ".clean_string($achternaam)."\n";
+    $email_message .= "Achternaam: ".clean_string($achternaam)."\n";
  
     $email_message .= "Email: ".clean_string($email_from)."\n";
  
-    $email_message .= "Telephone: ".clean_string($onderwerp)."\n";
+    $email_message .= "Onderwerp: ".clean_string($onderwerp)."\n";
  
-    $email_message .= "Comments: ".clean_string($bericht)."\n";
- 
-     
+    $email_message .= "Bericht: ".clean_string($bericht)."\n";
  
      
- 
-// create email headers
  
 $headers = 'From: '.$email_from."\r\n".
  
@@ -139,15 +123,9 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
  
+Het verzenden is gelukt!
  
-<!-- include your own success html here -->
- 
- 
- 
-Thank you for contacting us. We will be in touch with you very soon.
- 
- 
- 
+  
 <?php
  
 }
