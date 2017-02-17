@@ -41,8 +41,16 @@ ul.topnav {
     width: 100%;
 	border-bottom:3px solid #DDD;
 }
+#sides
+{
+	width:970px;
+	margin:0 auto;	
+}
 
-ul.topnav li {float: left;}
+ul.topnav li 
+{
+	float: left;
+}
 
 ul.topnav li a {
     display: block;
@@ -64,7 +72,6 @@ ul.topnav li.right {float: right;}
 /* header */
 #paginaheader
 {
-	margin-top: 2%;
 	background-color: #27AAE2;
 	height: 100%;
 	width: 100%;
@@ -72,7 +79,7 @@ ul.topnav li.right {float: right;}
 #naam
 {
 	font-size: 70px;
-    line-height: 100px;
+    line-height: 200px;
     min-height: 80px;
 	text-align: center;
 	font-weight: normal;
@@ -80,6 +87,7 @@ ul.topnav li.right {float: right;}
 }
 #beroep
 {
+	margin-top: -30px;
 	font-size: 30px;
 	text-align: center;
 	font-weight: normal;

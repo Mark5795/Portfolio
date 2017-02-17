@@ -8,9 +8,11 @@
 		<meta name="keywords" content="Porfolio, Mark, Kea,">
 
 		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 
-		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+		<script type='text/javascript' src='javascript/jquery.min.js'></script>
 		<script type="text/javascript" src="javascript/script.js"></script>		
 		<script type="text/javascript" src="javascript/smoothscroll.js"></script>
 	</head>
@@ -18,23 +20,27 @@
 	<body>
 		<section id="top"></section>
 
-		<ul class="topnav">
-			<li id="aboutLink">
-				<a href="#about" class="smoothScroll">
-					Wie ben ik
-				</a>
-			</li>
-			<li id="experienceLink">
-				<a href="#experience" class="smoothScroll">
-					Experience
-				</a>
-			</li>
-			<li id="contactLink">
-				<a href="#contact" class="smoothScroll">
-					Contact
-				</a>
-			</li>
-		</ul>    
+		<nav>		
+			<ul class="topnav">
+				<section id="sides">				
+					<li id="aboutLink">
+						<a href="#about">
+							Wie ben ik
+						</a>
+					</li>
+					<li id="experienceLink">
+						<a href="#experience">
+							Experience
+						</a>
+					</li>
+					<li id="contactLink">
+						<a href="#contact">
+							Contact
+						</a>
+					</li>
+				</section>
+			</ul>    
+		</nav>
 
 		<header id="paginaheader">
 			<h1 id="naam">Mark Kea</h1>
@@ -102,7 +108,7 @@
 		</section>	
 
 		<footer id="paginafooter">
-			<a href="#top" class="smoothScroll"><img id="arrow" src="img/arrow1.png" alt="arrow"></a>
+			<a href="#top"><img id="arrow" src="img/arrow1.png" alt="arrow"></a>
 			<p>Copyright &copy; 2017 Mark Kea</p>
 			<p id="emailfooter">markkea95@gmail.com</p>
 		</footer>		
