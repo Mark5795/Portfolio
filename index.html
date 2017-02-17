@@ -17,29 +17,24 @@
 
 	<body>
 		<section id="top"></section>
-		<section id="navheader">
-			<section id="navWrap">
-				<nav id="nav">
-					<ul>
-						<li id="aboutLink">
-							<a href="#about" class="smoothScroll">
-								Wie ben ik
-							</a>
-						</li>
-						<li id="experienceLink">
-							<a href="#experience" class="smoothScroll">
-								Experience
-							</a>
-						</li>
-						<li id="contactLink">
-							<a href="#contact" class="smoothScroll">
-								Contact
-							</a>
-						</li>
-					</ul>    
-				</nav>
-			</section>
-    	</section>
+
+		<ul class="topnav">
+			<li id="aboutLink">
+				<a href="#about" class="smoothScroll">
+					Wie ben ik
+				</a>
+			</li>
+			<li id="experienceLink">
+				<a href="#experience" class="smoothScroll">
+					Experience
+				</a>
+			</li>
+			<li id="contactLink">
+				<a href="#contact" class="smoothScroll">
+					Contact
+				</a>
+			</li>
+		</ul>    
 
 		<header id="paginaheader">
 			<h1 id="naam">Mark Kea</h1>
@@ -54,19 +49,30 @@
 					<p>
 						Hi, Ik ben Mark Kea, een 21-jarige, studerende, web developer uit omgeving Amsterdam.
 						Ik vind het leuk om voor mensen websites te bouwen, beheren en optimaliseren.
-						Dit doe ik vanaf scratch of met Wordpress.
+						Dit doe ik vanaf scratch, templates of met Wordpress.
 					</p>
 				</article>
 				<article id="skills">
 					<h1>Skills</h1>
 					<p>HTML5 & CSS3</p>
-					<p>PHP<p>
-					<p>Javascript</p>
-					<p>Bootstrap</p>
-					<p>WordPress</p>					
+					<section class="container">
+						<section class="skills html">90%</section>
+					</section>
+
 					<p>Photoshop</p>
-					<p>Github</p>
-					<p></p>
+					<section class="container">
+						<section class="skills css">70%</section>
+					</section>
+
+					<p>JavaScript</p>
+					<section class="container">
+						<section class="skills js">65%</section>
+					</section>
+
+					<p>PHP</p>
+					<section class="container">
+						<section class="skills php">65%</section>
+					</section>		
 				</article>
 			</section>
 		</section>

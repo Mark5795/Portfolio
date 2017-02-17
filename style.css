@@ -28,56 +28,51 @@ p
 	margin-top: 1%;
 	font-size: 20px;
 }
+
 /* navbar */
-#wrap {
-   margin: 10px auto;        
-   background: #FFFFFF;
-   padding: 10px;
-   width: 700px;
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	border-bottom:3px solid #DDD;
 }
-#navheader {
-   background-color: #FFFFFF;
-   color: #FFFFFF;
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: #27AAE2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-#navWrap {
-   height: 20px;
-}
-#nav {
-   padding: 5px;
-   background: #FFFFFF;  
-   min-height:30px;  
-}
-#nav ul {
-   margin: 0;
-   padding: 0;    
-}
-#nav li {
-   margin-left: auto;
-   margin-right: auto;
-   padding: 3px 8px;
-   background-color: #FFFFFF;
-   margin: 0 10px 0 0;
-   list-style-type: none;
-}
-#nav li a {
-   color: #27AAE2;  
-   text-decoration: none;
-}
-#nav li a:hover {
-   text-decoration: underline;   
+
+ul.topnav li a:hover:not(.active) {text-decoration: underline;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
 }
 
 /* header */
 #paginaheader
 {
+	margin-top: 2%;
 	background-color: #27AAE2;
-	height: auto;
+	height: 100%;
 	width: 100%;
 }
 #naam
 {
-	font-size: 50px;
-    line-height: 70px;
+	font-size: 70px;
+    line-height: 100px;
     min-height: 80px;
 	text-align: center;
 	font-weight: normal;
@@ -85,7 +80,7 @@ p
 }
 #beroep
 {
-	font-size: 24px;
+	font-size: 30px;
 	text-align: center;
 	font-weight: normal;
 	color: #ffffff;
@@ -122,13 +117,21 @@ p
 	width: 75%;
 	margin-bottom: 4%;
 }
-#skills
-{
-	height: auto;
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;	
+* {box-sizing:border-box}
+.container {
+    width: 100%;
+    background-color: #ddd; 
 }
+.skills {
+    text-align: right;
+    padding-right: 20px; 
+    line-height: 40px;
+    color: white; 
+}
+.html {width: 90%; background-color: #4CAF50;} 
+.css {width: 70%; background-color: #2196F3;} 
+.js {width: 65%; background-color: #f44336;} 
+.php {width: 65%; background-color: #808080;} 
 
 /* experience */
 #experience
