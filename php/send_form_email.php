@@ -9,13 +9,11 @@ if(isset($_POST['email'])) {
  
     function died($error) {
  
-        echo "Er zijn errors opgetreden";
+        echo "Er zijn errors opgetreden:<br />"; 
  
-        echo "Deze errors komen hieronder.<br /><br />";
+        echo $error."<br /><br /><br />";
  
-        echo $error."<br /><br />";
- 
-        echo "Gaat u terug en los de errors op<br /><br />";
+        echo "Gaat u terug en om de foutmeldingen te verhelpen<br /><br />";
  
         die();
  
