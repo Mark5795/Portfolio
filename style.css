@@ -1,6 +1,3 @@
-@charset "utf-8";
-@import "reset.css";
-
 body{
 	width:100%;
 	height:100%;
@@ -43,7 +40,7 @@ ul.topnav {
 }
 #sides
 {
-	width:970px;
+	width:800px;
 	margin:0 auto;	
 }
 
@@ -64,6 +61,11 @@ ul.topnav li a:hover:not(.active) {text-decoration: underline;}
 
 ul.topnav li.right {float: right;}
 
+#navlogo {
+	margin-top:3px;
+	width: 50px;
+	float:right;
+}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
