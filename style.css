@@ -138,10 +138,10 @@ ul.topnav li.right {float: right;}
     line-height: 40px;
     color: white; 
 }
-.html {width: 90%; background-color: #4CAF50;} 
-.php {width: 75%; background-color: #2196F3;} 
-.js {width: 75%; background-color: #f44336;} 
-.photoshop {width: 65%; background-color: #808080;} 
+.html {width: 1%; background-color: #4CAF50;} 
+.php {width: 1%; background-color: #2196F3;} 
+.js {width: 1%; background-color: #f44336;} 
+.photoshop {width: 1%; background-color: #808080;} 
 
 /* experience */
 #experience
