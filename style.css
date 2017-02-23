@@ -139,9 +139,9 @@ ul.topnav li.right {float: right;}
     color: white; 
 }
 .html {width: 90%; background-color: #4CAF50;} 
-.css {width: 70%; background-color: #2196F3;} 
-.js {width: 65%; background-color: #f44336;} 
-.php {width: 65%; background-color: #808080;} 
+.php {width: 75%; background-color: #2196F3;} 
+.js {width: 75%; background-color: #f44336;} 
+.photoshop {width: 65%; background-color: #808080;} 
 
 /* experience */
 #experience
