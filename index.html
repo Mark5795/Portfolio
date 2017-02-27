@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio Mark Kea</title>
+
+		<meta charset="UTF-8">
+		<meta name="description" content="Porfolio website Mark Kea">
+		<meta name="keywords" content="Porfolio, Mark, Kea,">
+
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+
+
+		<script type='text/javascript' src='javascript/jquery.min.js'></script>
+		<script type="text/javascript" src="javascript/script.js"></script>		
+		<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+	</head>
+
+	<body>
+		<section id="top"></section>
+
+		<nav>		
+			<ul class="topnav">
+				<section id="sides">				
+					<li id="aboutLink">
+						<a href="#about">
+							Wie ben ik
+						</a>
+					</li>
+					<li id="experienceLink">
+						<a href="#experience">
+							Experience
+						</a>
+					</li>
+					<li id="contactLink">
+						<a href="#contact">
+							Contact
+						</a>
+					</li>
+					<a href="#top"><img id="navlogo" src="img/logo.png" alt="logo" /></a>
+				</section>
+			</ul>    
+		</nav>
+
+
+		<header id="paginaheader">
+			<h1 id="naam">Mark Kea</h1>
+			<h2 id="beroep">Web Developer</h2>
+			<img id="headerpicture" src="img/responsive-webdesign.png" alt="Responsive webdeveloping">
+		</header>
+
+		<section id="about">
+			<h1>Wie ben ik</h1>
+			<section id="aboutsection">
+				<article id="wiebenik">
+					<p>
+						Hi, Ik ben Mark Kea, een 21-jarige, studerende, web developer uit omgeving Amsterdam.
+						Ik vind het leuk om voor mensen websites te bouwen, beheren en optimaliseren.
+						Dit doe ik vanaf scratch, templates of met Wordpress.
+					</p>
+				</article>
+				<article id="skills">
+					<h1>Skills</h1>
+					<p>HTML5 & CSS3</p>
+					<section class="container">
+						<section class="skills html">90%</section>
+					</section>
+					
+					<p>JavaScript</p>
+					<section class="container">
+						<section class="skills js">75%</section>
+					</section>
+
+					<p>PHP</p>
+					<section class="container">
+						<section class="skills php">75%</section>
+					</section>
+
+					<p>Photoshop</p>
+					<section class="container">
+						<section class="skills photoshop">60%</section>
+					</section>
+				</article>
+			</section>
+		</section>
+
+		<section id="experience">
+			<section id="experiencesection">
+				<h1 id="experiencetitel">Experience</h1>
+				<article>
+					<img id="workinprogress" src="img/workinprogress.png" alt="Work in Progress">				
+				</article>
+			</section>
+		</section>
+
+		<section id="contact">
+			<h1>Contact</h1>
+			<section id="contactformulier">
+				<section id="form-messages"></section>
+					<form name="contactform" method="post" action="php/send_form_email.php">					
+						<input type="text" name="voornaam" placeholder=" Voornaam" >					
+						<input type="text" name="achternaam" placeholder=" Achternaam" >					
+						<input type="text" name="email" placeholder=" Email" >					
+						<input type="text" name="onderwerp" placeholder=" Onderwerp" >					
+						<textarea name="bericht" rows="10" cols="30" placeholder=" Typ hier uw bericht..." ></textarea>
+						<input id="submit" type="submit" value="Versturen">
+					</form>
+			</section>
+		</section>	
+
+		<footer id="paginafooter">
+			<a href="#top"><img id="arrow" src="img/arrow1.png" alt="arrow"></a>
+			<p>Copyright &copy; 2017 Mark Kea</p>
+			<p id="emailfooter">markkea95@gmail.com</p>
+		</footer>		
+		
+	</body>
+</html>

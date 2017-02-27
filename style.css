@@ -1,0 +1,261 @@
+body{
+	width:100%;
+	height:100%;
+	margin:0;
+	padding:0;
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+	text-shadow: 0 0 1px rgba(51,51,51,0.2);
+}
+h1
+{
+	font-size: 50px;
+    line-height: 70px;
+    min-height: 80px;
+	text-align: center;
+	font-weight: normal;
+	color: #000000;
+}
+h2{
+	font-size: 30px;
+	font-weight: normal;
+}
+p
+{
+	margin-top: 1%;
+	font-size: 20px;
+}
+
+/* navbar */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	border-bottom:3px solid #DDD;
+}
+#sides
+{
+	width:800px;
+	margin:0 auto;	
+}
+
+ul.topnav li 
+{
+	float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: #27AAE2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {text-decoration: underline;}
+
+ul.topnav li.right {float: right;}
+
+#navlogo {
+	margin-top:3px;
+	width: 50px;
+	float:right;
+}
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+/* header */
+#paginaheader
+{
+	background-color: #27AAE2;
+	height: 100%;
+	width: 100%;
+}
+#naam
+{
+	font-size: 70px;
+    line-height: 200px;
+    min-height: 80px;
+	text-align: center;
+	font-weight: normal;
+	color: #ffffff;
+}
+#beroep
+{
+	margin-top: -30px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: normal;
+	color: #ffffff;
+}
+#headerpicture
+{
+	display: block;
+    margin-left: 33%;
+    margin-right: 100%;
+ 	height: auto; 
+ 	max-width: 40%
+}
+
+/* about */
+#about
+{
+	min-height: 469px;
+	padding-top: 2%;
+	padding-bottom: 5%;
+	max-width: 100%;
+}
+#aboutsection
+{
+	height: 100%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#wiebenik
+{
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	margin-bottom: 4%;
+}
+* {box-sizing:border-box}
+.container {
+    width: 100%;
+    background-color: #ddd; 
+}
+.skills {
+    text-align: right;
+    padding-right: 20px; 
+    line-height: 40px;
+    color: white; 
+}
+.html {width: 1%; background-color: #4CAF50;} 
+.php {width: 1%; background-color: #2196F3;} 
+.js {width: 1%; background-color: #f44336;} 
+.photoshop {width: 1%; background-color: #808080;} 
+
+/* experience */
+#experience
+{
+	border-style: solid;
+	min-height: 469px;
+	max-width: 100%;
+	overflow: initial;
+	background:#EAEAEA;
+}
+#workinprogress
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	height: auto; 
+ 	max-width: 40%;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+#experiencesection
+{
+	height: 100%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2%;
+}
+#experiencetitel
+{
+	margin-left: auto;
+	margin-right: auto;	
+}
+/* contact */
+#contact
+{
+	border-style: solid;
+	min-height: 469px;
+	max-width: 100%;
+	overflow: initial;
+	padding-top: 2%;
+	padding-bottom: 5%;
+}
+#contactformulier
+{
+	height: 100%;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+input
+{
+	height: 35px;
+	width:100%;	
+	color: #ffffff;
+	font-size:16px;
+	background-color: #27AAE2;
+	margin-top: 1%;
+	border: none;
+	border-top: 4px solid #1885b4;  
+}
+textarea
+{
+	font-family: 'Lato', sans-serif;
+	font-size:16px;
+	background-color: #27AAE2;
+	height: 120px;
+	width: 100%;
+	margin-top: 1%;
+	border: none;
+	border-top: 4px solid #1885b4; 
+}
+#submit
+{	
+	display: block;
+	width: 20%;	
+	margin-left: auto;
+	margin-right: auto;
+}
+::-webkit-input-placeholder {
+    color:#ffffff;
+}
+
+::-moz-placeholder {
+    color:#ffffff;
+}
+
+::-ms-placeholder {
+    color:#ffffff;
+}
+
+::placeholder {
+    color:#ffffff;
+}
+
+/* paginafooter */
+#paginafooter
+{
+	height: 100%;
+	width: 100%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background:#EAEAEA;
+	text-align: center;
+}
+#arrow
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+ 	height: auto;
+	width: auto;
+}
+#emailfooter
+{
+	margin: 1%;
+}
