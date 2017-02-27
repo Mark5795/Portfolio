@@ -122,7 +122,6 @@ $headers = 'From: '.$email_from."\r\n".
  
  
 Het verzenden is gelukt!
- 
   
 <?php
  

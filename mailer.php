@@ -3,13 +3,13 @@
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
-        $voornaam = strip_tags(trim($_POST["name"]));
-				$name = str_replace(array("\r","\n"),array(" "," "),$voornaam);
+        $name = strip_tags(trim($_POST["name"]));
+				$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($voornaam) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Oops! There was a problem with your submission. Please complete the form and try again.";
@@ -21,15 +21,15 @@
         $recipient = "markkea95@gmail.com";
 
         // Set the email subject.
-        $subject = "New contact from $voornaam";
+        $subject = "New contact from $name";
 
         // Build the email content.
-        $email_content = "Name: $voornaam\n";
+        $email_content = "Name: $name\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message:\n$message\n";
 
         // Build the email headers.
-        $email_headers = "From: $voornaam <$email>";
+        $email_headers = "From: $name <$email>";
 
         // Send the email.
         if (mail($recipient, $subject, $email_content, $email_headers)) {
