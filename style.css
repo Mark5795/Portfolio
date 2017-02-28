@@ -40,7 +40,7 @@ ul.topnav {
 }
 #sides
 {
-	width:800px;
+	width: 40%;
 	margin:0 auto;	
 }
 
@@ -66,9 +66,10 @@ ul.topnav li.right {float: right;}
 	width: 50px;
 	float:right;
 }
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+@media screen and (max-width: 1000px){
+    ul.topnav {
+		display: none;
+		}
 }
 
 /* header */
@@ -101,7 +102,18 @@ ul.topnav li.right {float: right;}
     margin-left: 33%;
     margin-right: 100%;
  	height: auto; 
- 	max-width: 40%
+ 	max-width: 40%;
+}
+@media screen and (max-width: 1000px){
+    #headerpicture {
+		margin-left: 20%;
+		max-width: 70%;
+		}
+}
+@media screen and (max-width: 1000px){
+    #naam {
+		line-height: 150px;
+		}		
 }
 
 /* about */
@@ -143,6 +155,11 @@ ul.topnav li.right {float: right;}
 .js {width: 1%; background-color: #f44336;} 
 .photoshop {width: 1%; background-color: #808080;} 
 
+@media screen and (max-width: 1000px){
+    #aboutsection {
+		width: 85%;
+		}
+}
 /* experience */
 #experience
 {
@@ -174,6 +191,11 @@ ul.topnav li.right {float: right;}
 {
 	margin-left: auto;
 	margin-right: auto;	
+}
+@media screen and (max-width: 1000px){
+    #workinprogress {
+		max-width: 75%;
+		}
 }
 /* contact */
 #contact
@@ -235,6 +257,11 @@ textarea
 
 ::placeholder {
     color:#ffffff;
+}
+@media screen and (max-width: 1000px){
+    #contactformulier, #submit {
+		width: 70%;
+		}
 }
 
 /* paginafooter */
